@@ -2,15 +2,17 @@
 layout: post
 title:  "Java for LEGO EV3 (Part1 - Display)"
 date:   2018-09-02 17:52:00 -0400
-categories: comp2801
+author: Yingjie Song
+categories: COMP2801
+tag: 2801
 ---
 <h2>Prerequisite</h2>
 
 LeJOS, Eclipse, Java 7
 
-([EV3 for Mac OS][ev3-mac-os])
+([Building Instructions][building-instructions])
 
-([robot building instructions][building-instructions])
+([EV3 for Mac OS][ev3-mac-os])
 
 ([LeJOS EV3 API][lejos-api])
 
@@ -22,13 +24,13 @@ LeJOS, Eclipse, Java 7
 
 <h2>1 Screen Display</h2>
 
-The display resolution of EV3 is 178px &times; 128px, and the origin located at the left-top corner. When display by pixels, the ranges are 0~177 (x-axis) and 0~127 (y-axis). When display by columns and rows, the ranges are 0~16 (columns) and 0~7 (rows). Additionally, pixels are usually used to draw pictures while the columns and rows are usually used to display letters.
+The screen resolution of EV3 is 178px &times; 128px, and the origin located at the top left corner. When displayed in units of pixels, the value ranges are 0~177 (x-axis) and 0~127 (y-axis). When displayed in units of columns and rows, the value ranges are 0~16 (columns) and 0~7 (rows). Additionally, pixels are mostly used to draw graphics, while the columns and rows are mostly used to display texts.
 
 <table>
 	<tr>
-		<th>coordinate</th>
-		<th>letter</th>
-		<th>pixel</th>
+		<th>Coordinate</th>
+		<th>Letter</th>
+		<th>Pixel</th>
 	</tr>
 	<tr>
 		<td>x's range</td>
