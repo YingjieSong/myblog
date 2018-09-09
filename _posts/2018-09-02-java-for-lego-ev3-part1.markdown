@@ -252,6 +252,37 @@ public class HelloWorld {
 
 [`clear()`][graphicslcd-clear--]
 
+Example: draw a sine graph
+
+{% highlight java%}
+import lejos.hardware.BrickFinder;
+import lejos.hardware.lcd.GraphicsLCD;
+
+public class HelloWorld {
+	public static void main(String[] args) {
+		GraphicsLCD g = BrickFinder.getDefault().getGraphicsLCD();
+		// the origin coordinates
+		int xp=10;
+		int yp=g.getHeight()/2;
+		// draw x-axis
+		g.drawLine(5, yp, 172, yp);
+		// draw y-axis
+		g.drawLine(xp, 5, xp, 122);
+		// draw sine graph
+		for(int i=-5; i<= 162; i++) {
+			// each pixel represent 3°
+			double si = Math.sin((3 * i) * Math.PI / 180);
+			// calculate the value of y
+			int yPoint=(int) (si * 30);
+			// draw pixels
+			LCD.setPixel(xp + i, yp - yPoint, 1);
+		}
+		// wait 5 seconds
+		Delay.msDelay(5000);
+	}
+}
+{% endhighlight %}
+
 Check out the [GraphicsLCD (leJOS EV3 API)][lejos-api-graphicslcd] for more info of the `GraphicsLCD` interface.
 
 [lejos-api-graphicslcd]: http://www.lejos.org/ev3/docs/lejos/hardware/lcd/GraphicsLCD.html
@@ -279,4 +310,3 @@ Check out the [GraphicsLCD (leJOS EV3 API)][lejos-api-graphicslcd] for more info
 [graphicslcd-drawImage-lejos.hardware.lcd.Image-int-int-int-]:http://www.lejos.org/ev3/docs/lejos/hardware/lcd/GraphicsLCD.html#drawImage-lejos.hardware.lcd.Image-int-int-int-
 
 [graphicslcd-clear--]:http://www.lejos.org/ev3/docs/lejos/hardware/lcd/CommonLCD.html#clear--
-
