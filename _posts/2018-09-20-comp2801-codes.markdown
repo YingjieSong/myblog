@@ -54,7 +54,7 @@ public class LawnMower {
 				flag = true;
 			}
 			
-			// when release onOff touch sensor
+			// when the onOff touch sensor is released
 			// change isOn to true
 			if (onOffReadings[0]==0 && !isOn && flag) {
 				isOn = true;
