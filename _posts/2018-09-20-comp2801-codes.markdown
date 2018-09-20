@@ -8,6 +8,8 @@ tag: 2801
 ---
 <h2>LawnMower</h2>
 
+The code below was written without testing, may has some bugs.
+
 {% highlight java %}
 import lejos.hardware.Button;
 import lejos.hardware.Sound;
@@ -49,14 +51,8 @@ public class LawnMower {
 			if (onOffReadings[0]>0 && !isOn && !isPressed) {
 				Button.LEDPattern(2);
 				bladeMotor.forward();
-				isPressed = true;
-			}
-			
-			// if the onOff touch sensor is released
-			// change isOn to true
-			if (onOffReadings[0]==0 && !isOn && isPressed) {
 				isOn = true;
-				isPressed = false;
+				isPressed = true;
 			}
 			
 			// if the onOff touch sensor is triggered again
@@ -70,8 +66,7 @@ public class LawnMower {
 			
 			// if the onOff touch sensor is released
 			// change isOn to true
-			if (onOffReadings[0]==0 && !isOn && isPressed) {
-				isOn = true;
+			if (onOffReadings[0]==0 && isPressed) {
 				isPressed = false;
 			}
 			
