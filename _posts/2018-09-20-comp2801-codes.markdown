@@ -65,7 +65,7 @@ public class LawnMower {
 			}
 			
 			// if the onOff touch sensor is released
-			// change isOn to true
+			// change ifPressed to false
 			if (onOffReadings[0]==0 && isPressed) {
 				isPressed = false;
 			}
