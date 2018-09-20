@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "code"
+title:  "Code"
 date:   2018-09-20 00:27:00 -0400
 author: Yingjie Song
 categories: COMP2801
@@ -36,37 +36,47 @@ public class LawnMower {
 		float[] propelReadings = new float[propel.sampleSize()];
 		float[] onOffReadings = new float[onOff.sampleSize()];
 
-		// Boolean isSpin = false;
 		Boolean isMove = false; 
 		Boolean isOn = false;
-		Boolean flag = false;
+		Boolean isPressed = false;
 		
 		while (!Button.ESCAPE.isDown()) {
-			// ...
-			// WRITE CODE HERE
-
 			propel.fetchSample(propelReadings, 0);
 			onOff.fetchSample(onOffReadings, 0);
 			
-			if (onOffReadings[0]>0 && !isOn) {
+			// if the onOff touch sensor is triggered
+			// start mowing
+			if (onOffReadings[0]>0 && !isOn && !isPressed) {
 				Button.LEDPattern(2);
 				bladeMotor.forward();
-				flag = true;
+				isPressed = true;
 			}
 			
-			// when the onOff touch sensor is released
+			// if the onOff touch sensor is released
 			// change isOn to true
-			if (onOffReadings[0]==0 && !isOn && flag) {
+			if (onOffReadings[0]==0 && !isOn && isPressed) {
 				isOn = true;
-				flag = false;
+				isPressed = false;
 			}
 			
-			if (onOffReadings[0]>0 && isOn) {
+			// if the onOff touch sensor is triggered again
+			// stop mowing
+			if (onOffReadings[0]>0 && isOn && !isPressed) {
 				Button.LEDPattern(0);
 				bladeMotor.stop();
 				isOn = false;
+				isPressed = true;
 			}
 			
+			// if the onOff touch sensor is released
+			// change isOn to true
+			if (onOffReadings[0]==0 && !isOn && isPressed) {
+				isOn = true;
+				isPressed = false;
+			}
+			
+			// if the propel touch sensor is triggered
+			// start moving
 			if (propelReadings[0]>0 && isOn && !isMove) {
 				Button.LEDPattern(1);
 				leftMotor.backward();
@@ -74,14 +84,14 @@ public class LawnMower {
 				isMove = true;
 			}
 			
+			// if the propel touch sensor is released
+			// stop moving
 			if (propelReadings[0]==0 && isOn && isMove) {
 				Button.LEDPattern(2);
 				leftMotor.stop(true);
 				rightMotor.stop();
 				isMove = false;
 			}
-			
-			// ...
 		}
 
 		// Close the sensors and motors and turn off the light
