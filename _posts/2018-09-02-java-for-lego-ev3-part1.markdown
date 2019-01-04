@@ -6,7 +6,7 @@ author: Yingjie Song
 categories: COMP2801
 tag: 2801
 ---
-<h2>Prerequisite</h2>
+##Prerequisite##
 
 LeJOS, Eclipse, Java 7
 
@@ -22,11 +22,11 @@ LeJOS, Eclipse, Java 7
 
 [lejos-api]: http://www.lejos.org/ev3/docs/index.html
 
-<h2>1 Screen Display</h2>
+##1 Screen Display##
 
 The screen resolution of EV3 is 178px &times; 128px, and the origin located at the top left corner. When displayed in units of pixels, the value ranges are 0~177 (x-axis) and 0~127 (y-axis). When displayed in units of columns and rows, the value ranges are 0~16 (columns) and 0~7 (rows). Additionally, pixels are mostly used to draw graphics, while the columns and rows are mostly used to display texts.
 
-<table>
+<!-- <table>
 	<tr>
 		<th>Coordinate</th>
 		<th>Letter</th>
@@ -42,9 +42,14 @@ The screen resolution of EV3 is 178px &times; 128px, and the origin located at t
 		<td>0~7</td>
 		<td>0~127</td>
 	</tr>
-</table>
+</table> -->
 
-<h3>1.1 print methods</h3>
+Coordinate|Letter|Pixel
+--|--|--
+x's range|0~16|0~177
+y's range|0~7|0~127
+
+###1.1 print methods###
 
 Regular `print` methods of Java.
 
@@ -53,7 +58,7 @@ System.out.print();
 System.out.println();
 {% endhighlight %}
 
-<h3>1.2 LCD class</h3>
+###1.2 LCD class###
 
 Usage:
 
@@ -61,9 +66,9 @@ Usage:
 import lejos.hardware.lcd.LCD;
 {% endhighlight %}
 
-<h4>1.2.1 Fields</h4>
+####1.2.1 Fields####
 
-<table>
+<!-- <table>
 	<tr>
 		<th>Type</th>
 		<th><a href="http://www.lejos.org/ev3/docs/lejos/hardware/lcd/LCD.html#field.summary">Field</a></th>
@@ -84,9 +89,16 @@ import lejos.hardware.lcd.LCD;
 		<td>int</td>
 		<td>SCREEN_WIDTH</td>
 	</tr>
-</table>
+</table> -->
 
-<h4>1.2.2 Methods</h4>
+Type|[Field](http://www.lejos.org/ev3/docs/lejos/hardware/lcd/LCD.html#field.summary)
+--|--
+int|CELL_HEIGHT
+int|CELL_WIDTH
+int|SCREEN_HEIGHT
+int|SCREEN_WIDTH
+
+####1.2.2 Methods####
 
 [`drawChar(char c, int x, int y)`][lcd-drawChar-char-int-int-]
 
@@ -159,7 +171,7 @@ Check out the [LCD (leJOS EV3 API)][lejos-api-lcd] for more info of the `LCD` cl
 
 [ms-delay]: http://www.lejos.org/ev3/docs/lejos/utility/Delay.html#msDelay-long-
 
-<h3>1.3 GraphicsLCD interface</h3>
+###1.3 GraphicsLCD interface###
 
 Usage:
 {% highlight java %}
@@ -173,9 +185,9 @@ public class HelloWorld {
 }
 {% endhighlight %}
 
-<h4>1.3.1 Fields</h4>
+####1.3.1 Fields####
 
-<table>
+<!-- <table>
 	<tr>
 		<th>Type</th>
 		<th><a href="http://www.lejos.org/ev3/docs/lejos/hardware/lcd/GraphicsLCD.html#field.summary">Field</a></th>
@@ -224,9 +236,23 @@ public class HelloWorld {
 		<td>int</td>
 		<td>WHITE</td>
 	</tr>
-</table>
+</table> -->
 
-<h4>1.3.2 Methods</h4>
+Type|[Field](http://www.lejos.org/ev3/docs/lejos/hardware/lcd/GraphicsLCD.html#field.summary)
+--|--
+int|BASELINE
+int|BLACK
+int|BOTTOM
+int|DOTTED
+int|HCENTER
+int|LEFT
+int|RIGHT
+int|SOLID
+int|TOP
+int|VCENTER
+int|WHITE
+
+####1.3.2 Methods####
 
 [`drawString(String str, int x, int y, int anchor)`][graphicslcd-drawString-java.lang.String-int-int-int-]
 
