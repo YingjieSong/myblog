@@ -3,7 +3,6 @@ layout: post
 title:  "Regular Expression"
 date:   2019-08-24 22:40:00 -0400
 author: Yingjie Song
-categories: COMP2801
 ---
 # Regular expression #
 
