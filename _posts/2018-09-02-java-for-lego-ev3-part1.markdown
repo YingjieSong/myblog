@@ -20,7 +20,7 @@ LeJOS, Eclipse, Java 7
 
 [building-instructions]: https://education.lego.com/en-us/support/mindstorms-ev3/building-instructions#robot
 
-[lejos-api]: http://www.lejos.org/ev3/docs/index.html
+[lejos-api]: https://lejos.sourceforge.io/ev3/docs/index.html
 
 ## 1 Screen Display ##
 
@@ -50,7 +50,7 @@ import lejos.hardware.lcd.LCD;
 
 #### 1.2.1 Fields ####
 
-Type|[Field](http://www.lejos.org/ev3/docs/lejos/hardware/lcd/LCD.html#field.summary)
+Type|[Field](https://lejos.sourceforge.io/ev3/docs/lejos/hardware/lcd/LCD.html#field.summary)
 --|--
 int|CELL_HEIGHT
 int|CELL_WIDTH
@@ -106,29 +106,29 @@ new method: [`msDelay(long period)`][ms-delay]
 
 Check out the [LCD (leJOS EV3 API)][lejos-api-lcd] for more info of the `LCD` class.
 
-[lejos-api-lcd]: http://www.lejos.org/ev3/docs/index.html?lejos/hardware/lcd/LCD.html
+[lejos-api-lcd]: https://lejos.sourceforge.io/ev3/docs/index.html?lejos/hardware/lcd/LCD.html
 
-[lcd-drawChar-char-int-int-]: http://www.lejos.org/ev3/docs/lejos/hardware/lcd/LCD.html#drawChar-char-int-int-
+[lcd-drawChar-char-int-int-]: https://lejos.sourceforge.io/ev3/docs/lejos/hardware/lcd/LCD.html#drawChar-char-int-int-
 
-[lcd-drawString-java.lang.String-int-int-]: http://www.lejos.org/ev3/docs/lejos/hardware/lcd/LCD.html#drawString-java.lang.String-int-int-
+[lcd-drawString-java.lang.String-int-int-]: https://lejos.sourceforge.io/ev3/docs/lejos/hardware/lcd/LCD.html#drawString-java.lang.String-int-int-
 
-[lcd-drawString-java.lang.String-int-int-boolean-]: http://www.lejos.org/ev3/docs/lejos/hardware/lcd/LCD.html#drawString-java.lang.String-int-int-boolean-
+[lcd-drawString-java.lang.String-int-int-boolean-]: https://lejos.sourceforge.io/ev3/docs/lejos/hardware/lcd/LCD.html#drawString-java.lang.String-int-int-boolean-
 
-[lcd-drawInt-int-int-int-]: http://www.lejos.org/ev3/docs/lejos/hardware/lcd/LCD.html#drawInt-int-int-int-
+[lcd-drawInt-int-int-int-]: https://lejos.sourceforge.io/ev3/docs/lejos/hardware/lcd/LCD.html#drawInt-int-int-int-
 
-[lcd-drawInt-int-int-int-int-]: http://www.lejos.org/ev3/docs/lejos/hardware/lcd/LCD.html#drawInt-int-int-int-int-
+[lcd-drawInt-int-int-int-int-]: https://lejos.sourceforge.io/ev3/docs/lejos/hardware/lcd/LCD.html#drawInt-int-int-int-int-
 
-[lcd-setPixel-int-int-int-]: http://www.lejos.org/ev3/docs/lejos/hardware/lcd/LCD.html#setPixel-int-int-int-
+[lcd-setPixel-int-int-int-]: https://lejos.sourceforge.io/ev3/docs/lejos/hardware/lcd/LCD.html#setPixel-int-int-int-
 
-[lcd-getPixel-int-int-]: http://www.lejos.org/ev3/docs/lejos/hardware/lcd/LCD.html#getPixel-int-int-
+[lcd-getPixel-int-int-]: https://lejos.sourceforge.io/ev3/docs/lejos/hardware/lcd/LCD.html#getPixel-int-int-
 
-[lcd-clear--]: http://www.lejos.org/ev3/docs/lejos/hardware/lcd/LCD.html#clear--
+[lcd-clear--]: https://lejos.sourceforge.io/ev3/docs/lejos/hardware/lcd/LCD.html#clear--
 
-[lcd-clear-int-]: http://www.lejos.org/ev3/docs/lejos/hardware/lcd/LCD.html#clear-int-
+[lcd-clear-int-]: https://lejos.sourceforge.io/ev3/docs/lejos/hardware/lcd/LCD.html#clear-int-
 
-[lcd-clear-int-int-int-]: http://www.lejos.org/ev3/docs/lejos/hardware/lcd/LCD.html#clear-int-int-int-
+[lcd-clear-int-int-int-]: https://lejos.sourceforge.io/ev3/docs/lejos/hardware/lcd/LCD.html#clear-int-int-int-
 
-[ms-delay]: http://www.lejos.org/ev3/docs/lejos/utility/Delay.html#msDelay-long-
+[ms-delay]: https://lejos.sourceforge.io/ev3/docs/lejos/utility/Delay.html#msDelay-long-
 
 ### 1.3 GraphicsLCD interface ###
 
@@ -146,7 +146,7 @@ public class HelloWorld {
 
 #### 1.3.1 Fields ####
 
-Type|[Field](http://www.lejos.org/ev3/docs/lejos/hardware/lcd/GraphicsLCD.html#field.summary)
+Type|[Field](https://lejos.sourceforge.io/ev3/docs/lejos/hardware/lcd/GraphicsLCD.html#field.summary)
 --|--
 int|BASELINE
 int|BLACK
@@ -219,28 +219,28 @@ public class HelloWorld {
 
 Check out the [GraphicsLCD (leJOS EV3 API)][lejos-api-graphicslcd] for more info of the `GraphicsLCD` interface.
 
-[lejos-api-graphicslcd]: http://www.lejos.org/ev3/docs/lejos/hardware/lcd/GraphicsLCD.html
+[lejos-api-graphicslcd]: https://lejos.sourceforge.io/ev3/docs/lejos/hardware/lcd/GraphicsLCD.html
 
-[graphicslcd-drawString-java.lang.String-int-int-int-]: http://www.lejos.org/ev3/docs/lejos/hardware/lcd/GraphicsLCD.html#drawString-java.lang.String-int-int-int-
+[graphicslcd-drawString-java.lang.String-int-int-int-]: https://lejos.sourceforge.io/ev3/docs/lejos/hardware/lcd/GraphicsLCD.html#drawString-java.lang.String-int-int-int-
 
-[graphicslcd-drawLine-int-int-int-int-]: http://www.lejos.org/ev3/docs/lejos/hardware/lcd/GraphicsLCD.html#drawLine-int-int-int-int-
+[graphicslcd-drawLine-int-int-int-int-]: https://lejos.sourceforge.io/ev3/docs/lejos/hardware/lcd/GraphicsLCD.html#drawLine-int-int-int-int-
 
-[graphicslcd-drawRect-int-int-int-int-]: http://www.lejos.org/ev3/docs/lejos/hardware/lcd/GraphicsLCD.html#drawRect-int-int-int-int-
+[graphicslcd-drawRect-int-int-int-int-]: https://lejos.sourceforge.io/ev3/docs/lejos/hardware/lcd/GraphicsLCD.html#drawRect-int-int-int-int-
 
-[graphicslcd-drawArc-int-int-int-int-int-int-]: http://www.lejos.org/ev3/docs/lejos/hardware/lcd/GraphicsLCD.html#drawArc-int-int-int-int-int-int-
+[graphicslcd-drawArc-int-int-int-int-int-int-]: https://lejos.sourceforge.io/ev3/docs/lejos/hardware/lcd/GraphicsLCD.html#drawArc-int-int-int-int-int-int-
 
-[graphicslcd-fillRect-int-int-int-int-]: http://www.lejos.org/ev3/docs/lejos/hardware/lcd/GraphicsLCD.html#fillRect-int-int-int-int-
+[graphicslcd-fillRect-int-int-int-int-]: https://lejos.sourceforge.io/ev3/docs/lejos/hardware/lcd/GraphicsLCD.html#fillRect-int-int-int-int-
 
-[graphicslcd-fillArc-int-int-int-int-int-int-]: http://www.lejos.org/ev3/docs/lejos/hardware/lcd/GraphicsLCD.html#fillArc-int-int-int-int-int-int-
+[graphicslcd-fillArc-int-int-int-int-int-int-]: https://lejos.sourceforge.io/ev3/docs/lejos/hardware/lcd/GraphicsLCD.html#fillArc-int-int-int-int-int-int-
 
-[graphicslcd-getWidth--]:http://www.lejos.org/ev3/docs/lejos/hardware/lcd/CommonLCD.html#getWidth--
+[graphicslcd-getWidth--]:https://lejos.sourceforge.io/ev3/docs/lejos/hardware/lcd/CommonLCD.html#getWidth--
 
-[graphicslcd-getHeight--]:http://www.lejos.org/ev3/docs/lejos/hardware/lcd/CommonLCD.html#getHeight--
+[graphicslcd-getHeight--]:https://lejos.sourceforge.io/ev3/docs/lejos/hardware/lcd/CommonLCD.html#getHeight--
 
-[graphicslcd-setColor-int-]:http://www.lejos.org/ev3/docs/lejos/hardware/lcd/GraphicsLCD.html#setColor-int-
+[graphicslcd-setColor-int-]:https://lejos.sourceforge.io/ev3/docs/lejos/hardware/lcd/GraphicsLCD.html#setColor-int-
 
-[graphicslcd-setStrokeStyle-int-]:http://www.lejos.org/ev3/docs/lejos/hardware/lcd/GraphicsLCD.html#setStrokeStyle-int-
+[graphicslcd-setStrokeStyle-int-]:https://lejos.sourceforge.io/ev3/docs/lejos/hardware/lcd/GraphicsLCD.html#setStrokeStyle-int-
 
-[graphicslcd-drawImage-lejos.hardware.lcd.Image-int-int-int-]:http://www.lejos.org/ev3/docs/lejos/hardware/lcd/GraphicsLCD.html#drawImage-lejos.hardware.lcd.Image-int-int-int-
+[graphicslcd-drawImage-lejos.hardware.lcd.Image-int-int-int-]:https://lejos.sourceforge.io/ev3/docs/lejos/hardware/lcd/GraphicsLCD.html#drawImage-lejos.hardware.lcd.Image-int-int-int-
 
-[graphicslcd-clear--]:http://www.lejos.org/ev3/docs/lejos/hardware/lcd/CommonLCD.html#clear--
+[graphicslcd-clear--]:https://lejos.sourceforge.io/ev3/docs/lejos/hardware/lcd/CommonLCD.html#clear--

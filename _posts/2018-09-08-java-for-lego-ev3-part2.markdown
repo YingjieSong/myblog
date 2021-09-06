@@ -20,7 +20,7 @@ import lejos.hardware.Sound;
 
 #### 2.1.1 Fileds ####
 
-Type|[Field](http://www.lejos.org/ev3/docs/lejos/hardware/Sound.html#field.summary)
+Type|[Field](https://lejos.sourceforge.io/ev3/docs/lejos/hardware/Sound.html#field.summary)
 --|--
 int|C2
 int|FLUTE
@@ -51,15 +51,15 @@ Sound.playTone(Sound.C2, 2000, 50);
 
 Check out the [Sound (leJOS EV3 API)][lejos-api-sound] for more info of the `Sound` class.
 
-[lejos-api-sound]: http://www.lejos.org/ev3/docs/lejos/hardware/Sound.html
+[lejos-api-sound]: https://lejos.sourceforge.io/ev3/docs/lejos/hardware/Sound.html
 
-[sound-beep]: http://www.lejos.org/ev3/docs/lejos/hardware/Sound.html#beep--
+[sound-beep]: https://lejos.sourceforge.io/ev3/docs/lejos/hardware/Sound.html#beep--
 
-[sound-playnote]: http://www.lejos.org/ev3/docs/lejos/hardware/Sound.html#playNote-int:A-int-int-
+[sound-playnote]: https://lejos.sourceforge.io/ev3/docs/lejos/hardware/Sound.html#playNote-int:A-int-int-
 
-[sound-playtone]: http://www.lejos.org/ev3/docs/lejos/hardware/Sound.html#playTone-int-int-int-
+[sound-playtone]: https://lejos.sourceforge.io/ev3/docs/lejos/hardware/Sound.html#playTone-int-int-int-
 
-[sound-playsample]: http://www.lejos.org/ev3/docs/lejos/hardware/Sound.html#playSample-java.io.File-int-
+[sound-playsample]: https://lejos.sourceforge.io/ev3/docs/lejos/hardware/Sound.html#playSample-java.io.File-int-
 
 #### Note-to-Frequency chart ####
 
